@@ -1,4 +1,4 @@
-import styled  from "@emotion/styled";
+import styled from "@emotion/styled";
 import pic from '../public/vercel.svg'
 import Image from "next/image";
 
@@ -45,7 +45,7 @@ export const SampleComponent = styled(_SampleComponent)(() => {
             },
 
         },
-        '> .c': {
+        '> .d': {
             height: '50%',
             listStyle: 'none',
         },

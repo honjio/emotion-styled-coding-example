@@ -1,7 +1,6 @@
 import { SampleComponent, sampleStyles } from "../components/sample1";
 import { ClassNamingHelper } from "../plugins/styling";
 
-
 const Home = () => {
   const list = ["text1", "text2", "text3"];
   const name = new ClassNamingHelper(); // default "&"
