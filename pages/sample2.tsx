@@ -5,7 +5,7 @@ type Props = {
   className?: string;
 }
 
-const _Other: React.VFC<Props> = ({ className }) => {
+const _Sample2: React.VFC<Props> = ({ className }) => {
   const list = ["text1", "text2", "text3"];
 
   return (
@@ -18,15 +18,15 @@ const _Other: React.VFC<Props> = ({ className }) => {
   );
 };
 
-const Other = styled(_Other)(() => {
+const Sample2 = styled(_Sample2)(() => {
   return {
     [SampleComponent as any]: {
       border: '1px solid red',
-      '> .a': {
+      '> .imgWrapper': {
         backgroundColor: '#ccc',
       }
     }
   }
 });
 
-export default Other;
+export default Sample2;

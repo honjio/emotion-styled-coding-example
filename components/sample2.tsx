@@ -13,14 +13,14 @@ const _SampleComponent: React.VFC<Props> = (props) => {
 
     return (
         <div className={className}>
-            <div className={'a'}>
-                <Image className={'b'} src={pic} alt="" />
+            <div className={'imgWrapper'}>
+                <Image className={'image'} src={pic} alt="" />
             </div>
-            <p className={'c'}>{label}</p>
-            <ul className={'d'}>
+            <p className={'label'}>{label}</p>
+            <ul className={'items'}>
                 {list.map((item) => {
                     return (
-                        <li className={'e'} key={item}>
+                        <li className={'item'} key={item}>
                             {item}
                         </li>
                     );
@@ -34,18 +34,18 @@ export const SampleComponent = styled(_SampleComponent)(() => {
     return {
         width: 500, // default px
         height: 500,
-        '> .a': {
+        '> .imgWrapper': {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
             height: '50%',
 
-            '.b': {
+            '.image': {
                 height: '100%',
             },
 
         },
-        '> .d': {
+        '> .items': {
             height: '50%',
             listStyle: 'none',
         },
