@@ -12,6 +12,7 @@ const Home = () => {
          <li><Link href="/sample1"><a css={style}>Sample1</a></Link></li>
          <li><Link href="/sample2"><a css={style}>Sample2</a></Link></li>
          <li><Link href="/sample3"><a css={style}>Sample3</a></Link></li>
+         <li><Link href="/sample4"><a css={style}>Sample4</a></Link></li>
        </ul>
      </div>
   );
