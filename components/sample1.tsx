@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import styled, { CSSObject } from "@emotion/styled";
 import { ClassNamingHelper, ShareStyle } from "../plugins/styling";
 import pic from '../public/vercel.svg'
-import Image from "next/image";
+// import Image from "next/image";
 
 type Props = {
     className?: string;
@@ -20,7 +21,7 @@ const _SampleComponent: React.VFC<Props> = (props) => {
     return (
         <div className={name.gen()}>
         <div className={name.gen('a')}>
-            <Image className={name.gen('b')} src={pic} alt="" />
+            <img className={name.gen('b')} src={pic} alt="" />
         </div>
         <p className={name.gen('c')}>{label}</p>
         <ul className={name.gen('d')}>

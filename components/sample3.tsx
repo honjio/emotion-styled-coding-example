@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import styled from "@emotion/styled";
 import pic from '../public/vercel.svg'
-import Image from "next/image";
+// import Image from "next/image";
 
 type Props = {
     className?: string;
@@ -36,7 +37,7 @@ export const SampleComponent: React.VFC<Props> = (props) => {
     return (
         <RootDiv>
             <ImgWrapperDiv>
-                <Image className="img" src={pic} alt="" />
+                <img className="img" src={pic} alt="" />
             </ImgWrapperDiv>
             <Label>{label}</Label>
             <Items>
